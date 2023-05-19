@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.13;
+contract Secondchallenge {
+    uint256 private number;
+
+    function deposit() public payable{
+
+        number += msg.value;
+
+    }
+
+
+    function getWei() public view returns (uint){
+        return number;
+
+    }
+    
+    function getGwei() public view returns (uint){
+        return number / 10**9;
+        
+    }
+
+    function getEth() public view returns (uint){
+
+    }
+ }
